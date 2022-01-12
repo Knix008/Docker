@@ -1,0 +1,17 @@
+version: '3' 
+services:
+  machine1:
+    image: busybox 
+    environment:
+      - MACHINE=1
+    command: sleep 5d
+  machine2:
+    image: busybox 
+    environment:
+      - MACHINE=2
+    command: sleep 5d
+  machine3: 
+    image: busybox 
+    environment:
+      - MACHINE=2 
+    command: sleep 5d
